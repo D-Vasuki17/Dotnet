@@ -1,0 +1,39 @@
+PROGRAM
+
+using System;
+namespace studentcon1
+{
+    class Program
+    {
+     class student
+        
+     {
+            int rollno,s1,s2,total;
+            string name;
+            float average;
+             
+            public student( )
+            {
+                
+                Console.WriteLine("enter the rollno");
+                rollno = int.Parse(Console.ReadLine());
+                Console.WriteLine("enter  the name");
+                name =Console.ReadLine();
+                Console.WriteLine("enter s1");
+                s1 = int.Parse(Console.ReadLine());
+                Console.WriteLine("enter s2");
+                s2 = int.Parse(Console.ReadLine());
+
+            }
+            public void calculate()
+            {
+                total = s1 + s2;
+                average = total / 2;
+            }
+            public void show()
+            {
+                Console.WriteLine("the total is" + total);
+                Console.WriteLine("the average is" + average);
+
+            }
+

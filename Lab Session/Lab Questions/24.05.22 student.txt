@@ -1,0 +1,2 @@
+Define a class student with 4 data members such as name roll no,s1,s2.also calculate total marks and percentage.
+
