@@ -1,0 +1,47 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int a, b, c;
+            try
+            {
+                Console.WriteLine("Enter a value : ");
+                a = int.Parse(Console.ReadLine());
+                Console.WriteLine("Enter b value : ");
+                b = int.Parse(Console.ReadLine());
+                c = a / b;
+                Console.WriteLine("Result : " + c);
+            }
+
+            catch (DivideByZeroException)
+            {
+                Console.WriteLine("Don't devide a number by zero ");
+            }
+
+            catch (FormatException)
+            {
+                Console.WriteLine("You are giving string instead of integer");
+            }
+
+            catch (Exception)
+            {
+                Console.WriteLine("Error");
+
+            }
+
+            finally                                   
+            {
+            Console.WriteLine("program executed successfullly");
+            }
+
+        }
+    }
+}
